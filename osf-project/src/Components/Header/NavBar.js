@@ -29,7 +29,6 @@ export default function ButtonAppBar() {
       <img
         src={logo}
         className="siteLogo"
-        style={{ height: 60, width: 60 }}
         alt="siteLogo"
           />
           <h1 className='logoTitle'>OSF <span>Academy</span></h1>

@@ -9,6 +9,11 @@
         display: flex;
         align-items: center;
 
+        & .siteLogo{
+            height: 60px;
+            width: 60px;
+        }
+
         & .logoTitle{
             width: 70px;
             font-size: 32px;
