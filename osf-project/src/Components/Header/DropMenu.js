@@ -6,7 +6,7 @@ function DropMenu() {
     return (
       <div className='DropMenu'>
         <div className="dropContainer">
-          <div className="dropRow">
+          <div className="dropRow"> 
             <ul>
               <li className="dropList">
                 <a href="#" className="dropLink heading">

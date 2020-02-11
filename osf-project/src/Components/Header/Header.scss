@@ -167,10 +167,15 @@ body{
   position: unset !important;
 }
 
+.PrivateNotchedOutline-root-135{
+  border: 0 !important;
+}
+
 .dropList{
 list-style: none;
 
   & .dropLink{
+    font-family: "Lato", sans-serif;
     color: #ffffff;
     font-size: 16px;
     text-transform: capitalize;
@@ -267,7 +272,6 @@ list-style: none;
   &:before {
     content: "\e900";
     @include iconStyle();
-    box-sizing: border-box;
   }
 
   &:hover {

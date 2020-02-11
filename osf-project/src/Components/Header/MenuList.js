@@ -13,14 +13,16 @@ export default function MenuPopupState() {
         <React.Fragment>
           <Button
             variant="contained"
-            {...bindTrigger(popupState)}
             endIcon={<ArrowDropDownIcon />}
+            {...bindTrigger(popupState)}
+            disableFocusListener="true"
+            disableRipple='true'
           >
             SERVICES
           </Button>
           <Menu {...bindMenu(popupState)}>
             <MenuItem onClick={popupState.close}>
-              <DropMenu style={{width:'inherit'}} />
+              <DropMenu style={{ width: "inherit" }} />
             </MenuItem>
           </Menu>
         </React.Fragment>
