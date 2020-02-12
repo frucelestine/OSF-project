@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.4.1",
     "create-react-class": "^15.6.3",
+    "fg-loadcss": "^2.1.0",
     "material-ui-popup-state": "^1.5.3",
     "node-sass": "^4.13.1",
     "nuka-carousel": "^4.6.2",
