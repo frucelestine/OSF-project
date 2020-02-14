@@ -5,6 +5,8 @@ import Slider  from './Components/Main/WithCloud/Slider'
 import DropMenu from './Components/Header/DropMenu'
 import MenuList from './Components/Header/MenuList'
 import PopularCard from './Components/Main/PopularItems/PopularCard'
+import Banner from './Components/Main/Banner/Banner';
+import FeaturedProducts from './Components/Main/FeaturedProducts/FeaturedProducts';
 
 
 function App() {
@@ -12,7 +14,9 @@ function App() {
     <div className="App" style={{maxWidth: 1280}}>
       <NavBar />
       <Slider />
-      <PopularCard/>
+      <PopularCard />
+      <Banner />
+      <FeaturedProducts/>
     </div>
   );
 } 

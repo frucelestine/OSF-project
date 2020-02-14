@@ -164,7 +164,14 @@ body{
 
 .MuiPopover-root{
   max-width: 1280px !important;
-  position: unset !important;
+  top: 78px !important;
+  left: unset !important;
+  right: unset !important;
+  height: fit-content;
+  width: 100%;
+
+
+  
 }
 
 .PrivateNotchedOutline-root-135{

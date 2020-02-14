@@ -16,12 +16,14 @@ export default function MenuPopupState() {
             endIcon={<ArrowDropDownIcon />}
             {...bindTrigger(popupState)}
             disableFocusListener="true"
-            disableRipple='true'
+            disableRipple="true"
           >
             SERVICES
           </Button>
           <Menu {...bindMenu(popupState)}>
-            <MenuItem onClick={popupState.close}>
+            <MenuItem
+              onClick={popupState.close}
+            >
               <DropMenu style={{ width: "inherit" }} />
             </MenuItem>
           </Menu>
