@@ -7,8 +7,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  display: flex;
-  align-items: center;
 
   & .textContainer {
     position: absolute;
@@ -17,7 +15,6 @@
     text-align: center;
     left: 50%;
     transform: translateX(-50%);
-    
     margin: 0 auto;
 
     & .bannerHead {
@@ -31,5 +28,35 @@
       max-width: 320px;
       margin: auto;
     }
+  }
+}
+
+//Media Querry
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .textContainer{
+    width: fit-content;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:767px){
+  .banner{
+    height: 185px;
+
+    & .textContainer{
+      padding: 0;
+      transform: unset;
+      top: unset;
+      left: unset;
+
+      & .bannerHead{
+        font-size: 30px;
+        padding-top: 30px;
+        
+      }
+
+    }
+
+
   }
 }

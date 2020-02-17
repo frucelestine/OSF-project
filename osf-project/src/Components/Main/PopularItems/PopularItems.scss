@@ -1,39 +1,38 @@
-.ProductSection{
-    height: 1061px;
-    padding: 90px 55px;
-    background-color: #262a32;
-    text-align: center;
-    font-family: "Lato", sans-serif;
+.ProductSection {
+  padding: 90px 55px;
+  background-color: #262a32;
+  text-align: center;
+  font-family: "Lato", sans-serif;
 
-    & .popularTitle{
-        color: #ffffff;
-        font-size: 24px;
-        font-weight: 900;
-        position: relative;
-        margin-bottom: 25px;
+  & .popularTitle {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 25px;
 
-        &::before{
-            content: '';
-            position: absolute;
-            display: inline-block;
-            background-color: #3c4047;
-            height: 2px;
-            width: 457px;
-            top: 15px;
-            left: 0;
-        }
-
-        &::after{
-            content: '';
-            position: absolute;
-            display: inline-block;
-            background-color: #3c4047;
-            height: 2px;
-            width: 457px;
-            top: 15px;
-            right: 0;
-        }
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      background-color: #3c4047;
+      height: 2px;
+      width: 457px;
+      top: 15px;
+      left: 0;
     }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      background-color: #3c4047;
+      height: 2px;
+      width: 457px;
+      top: 15px;
+      right: 0;
+    }
+  }
 }
 
 .cardContainer {
@@ -42,12 +41,13 @@
   flex-wrap: wrap;
 }
 
-#card, #cardNoOverlay{
-    margin: 15px 0;
+#card,
+#cardNoOverlay {
+  margin: 15px 0;
 }
 
-#card:hover #cardOverlay{
-    display: block;
+#card:hover #cardOverlay {
+  display: block;
 }
 
 #prodDescribe {
@@ -83,16 +83,16 @@
 
 //Green Overlay
 #cardOverlay {
-    display: none;
-    background-color: rgba(53, 201, 131, 0.5);
-    position: absolute;
-    height: inherit;
-    padding: 0 21px;
-    width: 270px;
-    left: 0;
-    top: 0;
-    
-    & #overlayBtn {
+  display: none;
+  background-color: rgba(53, 201, 131, 0.5);
+  position: absolute;
+  height: inherit;
+  padding: 0 21px;
+  width: 270px;
+  left: 0;
+  top: 0;
+
+  & #overlayBtn {
     margin: 0 11px;
     border-radius: 50%;
     height: 90px;
@@ -119,54 +119,134 @@
 }
 
 //Load MoreButton
-#loadMore{
-    width: 268px;
-    color: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 40px;
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 40px;
+#loadMore {
+  width: 268px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 40px;
 }
 
 // Disablled card
 
-.disableCardTextBlock{
-    text-align: left !important;
-    max-width: 133px;
-    color: #ffffff;
-    position: absolute;
-    z-index: 9;
-    bottom: 20px;
-    left: 30px;
+.disableCardTextBlock {
+  text-align: left !important;
+  max-width: 133px;
+  color: #ffffff;
+  position: absolute;
+  z-index: 9;
+  bottom: 20px;
+  left: 30px;
 
-    & .disableText{
-        font-size: 16px;
-        line-height: 25px;
-        
+  & .disableText {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  & .chatIconGroup {
+    display: flex;
+    align-items: flex-start;
+
+    & .timeAgo {
+      margin: 10px 0 0 10px;
     }
-
-    & .chatIconGroup{
-        display: flex;
-        align-items: flex-start;
-
-        & .timeAgo{
-            margin: 10px 0 0 10px;
-        }
-    }
-
-
+  }
 }
 
 //Disabled card overlay Gradien
 
-.gradienOverlay{
-    height: 367px;
-    width: 270px;
-    position: absolute;
-    background-image: linear-gradient(to bottom, rgba(202, 100, 138, 0.5), rgba(113, 101, 151, 0.5));
-    left: 0;
-    top: 0;
+.gradienOverlay {
+  height: 367px;
+  width: 270px;
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(202, 100, 138, 0.5),
+    rgba(113, 101, 151, 0.5)
+  );
+  left: 0;
+  top: 0;
 }
 
 
+//PopularMobile
+.popularMobile{
+   display: none;
+  background-color: #262a32;
+  padding: 32px 15px 26px;
+  height: 509px;
+  text-align: center;
+
+  & .popularTitle {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 5px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      background-color: #3c4047;
+      height: 2px;
+      width: 68px;
+      top: 15px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      background-color: #3c4047;
+      height: 2px;
+      width: 68pxpx;
+      top: 15px;
+      right: 0;
+    }
+  }
+}
+
+//Media Queriy
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .popularTitle::before,
+  .popularTitle::after {
+    width: 222px !important;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .ProductSection {
+    display: none;
+  }
+
+  .popularTitle {
+    margin-bottom: 25px !important;
+  }
+
+  .popularTitle::before,
+  .popularTitle::after {
+    width: 50px !important;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .popularMobile{
+    display: block;
+
+    & .slick-list{
+      margin: unset;
+    }
+
+    & .slick-slider{
+      text-align: -webkit-center;
+    }
+  }
+}

@@ -7,6 +7,11 @@ import MenuList from './Components/Header/MenuList'
 import PopularCard from './Components/Main/PopularItems/PopularCard'
 import Banner from './Components/Main/Banner/Banner';
 import FeaturedProducts from './Components/Main/FeaturedProducts/FeaturedProducts';
+import Services from './Components/Main/Services/Services';
+import Footer from './Components/Footer/Footer'
+import FooterForMobile from './Components/Footer/FooterForMobile'
+import MobileIcons from "./Components/Header/MobileIcons";
+import PopularMobile from './Components/Main/PopularItems/PopularMobile'
 
 
 function App() {
@@ -14,9 +19,14 @@ function App() {
     <div className="App" style={{maxWidth: 1280}}>
       <NavBar />
       <Slider />
+      <PopularMobile/>
       <PopularCard />
       <Banner />
-      <FeaturedProducts/>
+      <FeaturedProducts />
+      <Services />
+      <Footer/>
+      <FooterForMobile />
+      <MobileIcons/>
     </div>
   );
 } 

@@ -11,16 +11,15 @@ import ButtonGroup from "@material-ui/core/ButtonGroup";
 import AddIcon from "@material-ui/icons/Add";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ReplayIcon from "@material-ui/icons/Replay";
-import Icon from "@material-ui/core/Icon";
 import "./PopularItems.scss";
 import dragons from "../../../Images/dragons.png";
 import prod from "../../../Images/prod.jpg";
-import prod2 from "../../../Images/prod2.jpg";
+import prod2 from "../../../Images/prod2.jpg"; 
 import prod3 from "../../../Images/prod3.jpg";
 import prod4 from "../../../Images/prod4.jpg";
 import prod5 from "../../../Images/prod5.jpg";
 import prod6 from "../../../Images/prod6.jpg";
-import prod7 from "../../../Images/prod7.jpg";
+import prod7 from "../../../Images/prod7.jpg"; 
 import prod8 from "../../../Images/prod8.jpg";
 
 const useStyles = makeStyles(theme => ({

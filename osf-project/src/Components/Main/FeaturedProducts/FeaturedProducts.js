@@ -7,22 +7,43 @@ import img1 from "../../../Images/img1.jpg";
 import img2 from "../../../Images/img2.jpg";
 import img3 from "../../../Images/img3.jpg";
 import img4 from "../../../Images/img4.jpg";
-import NavigateNextOutlinedIcon from "@material-ui/icons/NavigateNextOutlined";
+import slideIcon from '../../../Images/slideIcon.png';
+
 
 class FeaturedProducts extends React.Component {
   render() {
     var settings = {
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 5000, 
       infinite: true,
       speed: 500,
       slidesToShow: 4,
-      slidesToScroll: 4
+      slidesToScroll: 4,
+      responsive: [
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll:2
+          }
+        },
+
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll:1
+          }
+        }
+      ]
     };
+
+    
     return (
       <div className="carouselContainer">
         <h3 className="productHead">Featured Products</h3>
         <p className="productSub">Unde omnis iste natus error sit voluptatem</p>
+        <img className='slideLogo' alt='slider logo, 3 white bars' src={slideIcon}/>
         <Slider className="slideCase" {...settings}>
           <div id="featureCard">
             <img id="slideImage" src={img1} alt="apple ipad and computer set" />

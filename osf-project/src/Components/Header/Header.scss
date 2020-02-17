@@ -32,6 +32,23 @@ body{
   box-sizing: border-box;
   padding: 12px 55px;
 
+  & .icons{
+    width: 224px;
+    display: flex;
+    justify-content: space-between;
+
+    & .fas, .far{
+      color: #a2a09e;
+      cursor: pointer;
+      width: 25px;
+      height: 25px;
+
+     &:hover{
+       color: #262a32;
+     } 
+    }
+  }
+
   & .logoType {
     cursor: pointer;
     width: 150px;
@@ -112,7 +129,7 @@ body{
   .NavSelect {
     max-width: 200px !important;
   }
-}
+} 
 
 //DropMenu Menu Styles
 
@@ -167,7 +184,7 @@ body{
   top: 78px !important;
   left: unset !important;
   right: unset !important;
-  height: fit-content;
+  height: auto;
   width: 100%;
 
 
@@ -224,67 +241,14 @@ list-style: none;
   }
 }
 
-.icon-search {
-  @include iconButton();
 
-  &:before {
-    content: "\e903";
-    @include iconStyle();
-  }
 
-  &:hover {
 
-    &:before {
-      color: #84bc22 !important;
-    }
-  }
-}
 
-.icon-heart {
-  @include iconButton();
 
-  &:before {
-    content: "\e902";
-    @include iconStyle();
-  }
 
-  &:hover {
 
-    &:before {
-      color: #84bc22 !important;
-    }
-  }
-}
 
-.icon-user {
-  @include iconButton();
 
-  &:before {
-    content: "\260a";
-    @include iconStyle();
-  
-  }
 
-  &:hover {
 
-    &:before {
-      color: #84bc22 !important;
-    }
-  }
-}
-
-.icon-shopping-bag {
-  @include iconButton();
-
-  &:before {
-    content: "\e900";
-    @include iconStyle();
-  }
-
-  &:hover {
-
-    &:before {
-      color: #84bc22 !important;
-    }
-  }
-}

@@ -1,50 +1,41 @@
 .withCloudContainer {
-  max-width: 1170;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
   background-color: #ffffff;
-  position: relative;
-  height: 553px;
   padding: 25px 55px;
 }
 
 // Slider Styles
 .slider {
-  width: 870px !important;
-  position: absolute;
-  & .sliderCarousel {
-    width: 870px !important;
-    height: 505px !important;
-  }
+  max-width: 870px;
+  position: relative;
 }
+
 .sliderImage {
   width: inherit;
-  height: 505px;
+  height: 507px;
   border: 1px solid #ffffff;
   object-fit: cover;
   border-radius: 5px;
 }
 
-.slider-control-centerright,
-.slider-control-centerleft {
-  display: none;
-}
-
-.sliderTitle {
+#sliderText {
   font-family: "Lato", sans-serif;
   position: absolute;
   z-index: 9;
-  left: 60px;
-  top: 77px;
+  padding: 77px 0 0 60px;
   color: #ffffff;
-  max-width: 564px;
+  max-width: 663px;
 
   & .mainText {
-    font-weight: 500;
+    font-weight: 900;
     font-size: 48px;
     margin-bottom: 80px;
   }
 
   & .secondaryText {
-    font-family: 14px;
+    font-size: 14px;
     font-weight: 400;
     max-width: 336px;
     margin-bottom: 30px;
@@ -60,14 +51,14 @@
 
 //Discount Styles
 
-.discountContainer{
+.discountContainer {
   text-align: center;
   max-width: 270px;
-  position: absolute;
-  right: 55px;
+  // position: absolute;
+  // right: 55px;
 
-  & .discountPaper{
-    background-color: rgba(132, 188, 34, 0.5);
+  & .discountPaper {
+    background-color: rgba(132, 188, 34, 0.3);
     height: 335px;
     color: #ffffff;
     position: relative;
@@ -75,37 +66,38 @@
     text-align: center;
     width: 270px;
 
-    & .discountPercent{
+    & .discountPercent {
       font-size: 100px;
       font-weight: 900;
       padding-top: 30px;
       margin-bottom: 68px;
     }
 
-    & .percentDescribe{
+    & .percentDescribe {
       font-size: 24px;
       font-weight: 400;
       max-width: 114px;
+      z-index: 99;
       margin: 0 auto;
     }
 
-    & .palmTree{
+    & .palmTree {
       position: absolute;
       left: 0;
-      z-index: -999;
+      z-index: 1;
       overflow: hidden;
       bottom: 0px;
     }
   }
 
-  & .followUS{
+  & .followUS {
     font-size: 18px;
     font-weight: 400;
     color: #777471;
     padding: 30px 0 15px;
   }
 
-  & .followDescribe{
+  & .followDescribe {
     font-size: 13px;
     color: #777471;
     max-width: 190px;
@@ -113,10 +105,109 @@
     padding-bottom: 20px;
   }
 
-  & #percentBtn{
+  & #percentBtn {
     border-radius: 20px;
     border-color: #3a5b96;
     color: #3a5b96;
     width: 150px;
   }
+}
+
+//Media Queries
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  body {
+    width: 768px;
+  }
+  .withCloudContainer {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .sliderImage{
+    height: 400px;
+  }
+
+  .slider {
+    max-width: 485px;
+    
+
+    #sliderText { 
+      padding: 50px 0 0 20px;
+      max-width: 444px;
+
+      & .mainText {
+        font-size: 32px;
+        margin-bottom: 60px;
+      }
+
+    }
+  }
+
+  .discountPaper {
+    height: 250px !important;
+    width: 220px !important;
+  }
+
+  .discountPercent {
+    font-size: 70px !important;
+    margin-bottom: 50px !important;
+  }
+
+  .percentDescribe {
+    font-size: 24px;
+    max-width: 114px;
+  }
+
+  .palmTree {
+    display: none;
+  }
+
+  .followUS {
+    padding: 15px 0 10px !important;
+  }
+
+}
+
+@media screen and (min-width:320px) and (max-width:767px){
+
+  .withCloudContainer{
+    padding: 15px;
+  }
+  .discountContainer{
+    display: none;
+  }
+
+  .slider{
+        width: 100vw !important;
+  }
+
+  #sliderText{
+    padding: 20px;
+    text-align: center;
+
+    & .mainText{
+      font-size: 28px;
+      text-align: left;
+    }
+
+    & .secondaryText{
+      text-align: left;
+      margin-bottom: 50px;
+    }
+
+    & #moreBtn{
+      margin: 0 auto;
+    }
+    
+  }
+
+  .sliderImage{
+    border-radius: 5px !important;
+    height: 473px;
+  }
+
+  .slick-list{
+  width: 90vw;
+}
 }

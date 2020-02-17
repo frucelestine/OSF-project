@@ -11,7 +11,7 @@ function Banner() {
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium
         </p>
-      </div>
+      </div> 
     </div>
   );
 }
