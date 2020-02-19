@@ -9,6 +9,7 @@ import Services from './Components/Main/Services/Services';
 import Footer from './Components/Footer/Footer'
 import FooterForMobile from './Components/Footer/FooterForMobile'
 import MobileIcons from "./Components/Header/MobileIcons";
+import LoginForm from './Components/Login/LoginForm'
 import Store from "./Redux/Store";
 import { Provider } from "react-redux";
 
@@ -21,6 +22,7 @@ export default function App() {
     <div className="App" style={{ maxWidth: 1280 }}>
     <Provider store={Store}>
         <NavBar />
+        <LoginForm/>
         <Slider />
         <PopularMobile />
         <PopularCard />

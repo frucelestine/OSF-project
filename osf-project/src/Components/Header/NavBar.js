@@ -6,6 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Header.scss";
 import './HeaderMedia.scss';
+import LoginForm from '../../Components/Login/LoginForm'
 import logo from "../../Images/logo.png";
 import MenuList from './MenuList';
 import LanguageSelect from "./LanguageSelect";
@@ -68,7 +69,7 @@ const mapStateToProps = state => {
         <LanguageSelect id="language" />
         <div className="icons">
           <i class="fas fa-search"></i>
-          <i class="far fa-user"></i>
+          <i class="far fa-user" data-toggle="modal" data-target="#myModal"></i>
           <i class="far fa-heart">
             <p id="countShow">{props.wishCount}</p>
           </i>
