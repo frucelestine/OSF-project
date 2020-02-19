@@ -11,6 +11,9 @@ import ButtonGroup from "@material-ui/core/ButtonGroup";
 import AddIcon from "@material-ui/icons/Add";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import ReplayIcon from "@material-ui/icons/Replay";
+import {addWish} from '../../../Redux/Wish/WishAction'
+import { addToCart } from "../../../Redux/Cart/CartAction";
+import { connect } from "react-redux";
 import "./PopularItems.scss";
 import dragons from "../../../Images/dragons.png";
 import prod from "../../../Images/prod.jpg";
@@ -35,7 +38,15 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function PopularCard() {
+const mapDispatchToProps = dispatch => {
+  return {
+    addToCart: () => dispatch(addToCart()),
+    addWish: () => dispatch(addWish())
+  };
+};
+
+export function PopularCard(props) {
+  console.debug({props})
   const classes = useStyles();
 
   return (
@@ -67,10 +78,10 @@ export default function PopularCard() {
           </CardActionArea>
 
           <div id="cardOverlay" className={classes.root}>
-            <Button id="overlayBtn">
+            <Button id="overlayBtn" onClick={props.addToCart}>
               <AddIcon id="overlayIcon" />
             </Button>
-            <Button id="overlayBtn">
+            <Button id="overlayBtn" onClick={props.addWish}>
               <FavoriteIcon id="overlayFav" />
             </Button>
           </div>
@@ -100,7 +111,9 @@ export default function PopularCard() {
                   aria-label="outlined primary button group"
                 >
                   <Button id="groupPrice">$659.55</Button>
-                  <Button id="buyNow">BUY NOW</Button>
+                  <Button id="buyNow" onClick={props.addToCart}>
+                    BUY NOW
+                  </Button>
                 </ButtonGroup>
               </div>
             </CardContent>
@@ -131,10 +144,10 @@ export default function PopularCard() {
           </CardActionArea>
 
           <div id="cardOverlay" className={classes.root}>
-            <Button id="overlayBtn">
+            <Button id="overlayBtn" onClick={props.addToCart}>
               <AddIcon id="overlayIcon" />
             </Button>
-            <Button id="overlayBtn">
+            <Button id="overlayBtn" onClick={props.addWish}>
               <FavoriteIcon id="overlayFav" />
             </Button>
           </div>
@@ -164,10 +177,10 @@ export default function PopularCard() {
           </CardActionArea>
 
           <div id="cardOverlay" className={classes.root}>
-            <Button id="overlayBtn">
+            <Button id="overlayBtn" onClick={props.addToCart}>
               <AddIcon id="overlayIcon" />
             </Button>
-            <Button id="overlayBtn">
+            <Button id="overlayBtn" onClick={props.addWish}>
               <FavoriteIcon id="overlayFav" />
             </Button>
           </div>
@@ -198,10 +211,10 @@ export default function PopularCard() {
           </CardActionArea>
 
           <div id="cardOverlay" className={classes.root}>
-            <Button id="overlayBtn">
+            <Button id="overlayBtn" onClick={props.addToCart}>
               <AddIcon id="overlayIcon" />
             </Button>
-            <Button id="overlayBtn">
+            <Button id="overlayBtn" onClick={props.addWish}>
               <FavoriteIcon id="overlayFav" />
             </Button>
           </div>
@@ -232,10 +245,10 @@ export default function PopularCard() {
           </CardActionArea>
 
           <div id="cardOverlay" className={classes.root}>
-            <Button id="overlayBtn">
+            <Button id="overlayBtn" onClick={props.addToCart}>
               <AddIcon id="overlayIcon" />
             </Button>
-            <Button id="overlayBtn">
+            <Button id="overlayBtn" onClick={props.addWish}>
               <FavoriteIcon id="overlayFav" />
             </Button>
           </div>
@@ -266,10 +279,10 @@ export default function PopularCard() {
           </CardActionArea>
 
           <div id="cardOverlay" className={classes.root}>
-            <Button id="overlayBtn">
+            <Button id="overlayBtn" onClick={props.addToCart}>
               <AddIcon id="overlayIcon" />
             </Button>
-            <Button id="overlayBtn">
+            <Button id="overlayBtn" onClick={props.addWish}>
               <FavoriteIcon id="overlayFav" />
             </Button>
           </div>
@@ -303,3 +316,5 @@ export default function PopularCard() {
     </div>
   );
 }
+
+export default connect(null, mapDispatchToProps)(PopularCard)

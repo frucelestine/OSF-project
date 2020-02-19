@@ -23,8 +23,6 @@ export default class extends React.Component {
       speed: 500,
       autoplay: true,
       autoplaySpeed: 3000,
-      prevArrow: false,
-      nextArrow: false,
       nextArrow: <SampleNextArrow />,
       prevArrow: <SamplePrevArrow />,
       swipeToSlide: true,
@@ -52,54 +50,65 @@ export default class extends React.Component {
     return (
       <div className="withCloudContainer">
         <div className="slider">
-          <div id="sliderText">
-            <h3 className="mainText">
-              Controle and manage any device with cloud solutions
-            </h3>
-            <h6 className="secondaryText">
-              Improve business performance and the user experience with the
-              right mix of IoT technology and processes
-            </h6>
-            <Button id="moreBtn" variant="outlined">
-              VIEW MORE
-            </Button>
-          </div>
-          <Slider {...settings} >
-            <img
-              className="sliderImage"
-              src={sliderImg}
-              alt="Image of woman and shopping bags"
-            />
+          <Slider {...settings}>
+            <div className="sliderGroup">
+              <div className="sliderText textA">
+                <h3 className="mainText">
+                  Control and manage any device with cloud solutions
+                </h3>
+                <h6 className="secondaryText">
+                  Improve business performance and the user experience with the
+                  right mix of IoT technology and processes
+                </h6>
+                <Button id="moreBtn" variant="outlined">
+                  VIEW MORE
+                </Button>
+              </div>
+              <img
+                className="sliderImage"
+                src={sliderImg}
+                alt="of woman and shopping bags"
+              />
+            </div>
 
-            <img
-              className="sliderImage"
-              src={sliderImg}
-              alt="Image of woman and shopping bags"
-            />
-
-            <img
-              className="sliderImage"
-              src={sliderImg}
-              alt="Image of woman and shopping bags"
-            />
-
-            <img
-              className="sliderImage"
-              src={sliderImg}
-              alt="Image of woman and shopping bags"
-            />
-
-            <img
-              className="sliderImage"
-              src={sliderImg}
-              alt="Image of woman and shopping bags"
-            />
-
-            <img
-              className="sliderImage"
-              src={sliderImg}
-              alt="Image of woman and shopping bags"
-            />
+            <div className="sliderGroup">
+              <div className="sliderText textB">
+                <h3 className="mainText">
+                  Control and manage any device with cloud solutions
+                </h3>
+                <h6 className="secondaryText">
+                  Improve business performance and the user experience with the
+                  right mix of IoT technology and processes
+                </h6>
+                <Button id="moreBtn" variant="outlined">
+                  VIEW MORE
+                </Button>
+              </div>
+              <img
+                className="sliderImage"
+                src={sliderImg}
+                alt="of woman and shopping bags"
+              />
+            </div>
+            <div className="sliderGroup">
+              <div className="sliderText textC">
+                <h3 className="mainText">
+                  Control and manage any device with cloud solutions
+                </h3>
+                <h6 className="secondaryText">
+                  Improve business performance and the user experience with the
+                  right mix of IoT technology and processes
+                </h6>
+                <Button id="moreBtn" variant="outlined">
+                  VIEW MORE
+                </Button>
+              </div>
+              <img
+                className="sliderImage"
+                src={sliderImg}
+                alt="of woman and shopping bags"
+              />
+            </div>
           </Slider>
         </div>
         <Discount />

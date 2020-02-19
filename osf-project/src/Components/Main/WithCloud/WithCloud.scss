@@ -12,6 +12,25 @@
   position: relative;
 }
 
+//Slider Dots
+.slick-dots li button:before{
+  color: #ffffff !important;
+  width: 30px;
+  height: 30px;
+}
+
+.slick-dots li.slick-active button:before{
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  border: 3px solid #ffffff;
+  top: 5px;
+  content: ' ';
+  background-position: center;
+  border-radius: 50%;
+
+}
+
 .sliderImage {
   width: inherit;
   height: 507px;
@@ -20,13 +39,42 @@
   border-radius: 5px;
 }
 
-#sliderText {
+.sliderGroup{
+  position: relative;
+  box-sizing: border-box;
+
+}
+
+.sliderText {
   font-family: "Lato", sans-serif;
   position: absolute;
   z-index: 9;
+  width: 100%;
   padding: 77px 0 0 60px;
   color: #ffffff;
   max-width: 663px;
+
+  &.textB{
+    text-align: center;
+   margin-top: 77px;
+   left: 50%;
+   transform: translateX(-50%);
+   padding: 0;
+
+   & .secondaryText{
+         margin: 0 auto 30px;
+   }
+  }
+
+  &.textC{
+    text-align: right;
+    right: 60px;
+
+    & .secondaryText{
+         margin: 0 0 30px auto;
+   }
+  }
+
 
   & .mainText {
     font-weight: 900;
@@ -110,6 +158,11 @@
     border-color: #3a5b96;
     color: #3a5b96;
     width: 150px;
+
+    &:hover{
+      background-color: #3a5b96;
+      color: #ffffff;
+    }
   }
 }
 
@@ -130,19 +183,17 @@
 
   .slider {
     max-width: 485px;
-    
+  }
 
-    #sliderText { 
-      padding: 50px 0 0 20px;
-      max-width: 444px;
+   
 
-      & .mainText {
-        font-size: 32px;
-        margin-bottom: 60px;
+      .sliderText .mainText {
+        font-size: 32px ;
+        margin-bottom: 40px;
       }
 
-    }
-  }
+    
+  
 
   .discountPaper {
     height: 250px !important;
@@ -173,41 +224,43 @@
 
   .withCloudContainer{
     padding: 15px;
+    box-sizing: border-box;
+    display: block;
   }
   .discountContainer{
     display: none;
   }
 
-  .slider{
-        width: 100vw !important;
+  .textC{
+    right: 10px !important;
   }
 
-  #sliderText{
+  .sliderText{
     padding: 20px;
-    text-align: center;
+  }
 
-    & .mainText{
-      font-size: 28px;
-      text-align: left;
+    .mainText{
+      font-size: 28px !important;
     }
 
-    & .secondaryText{
-      text-align: left;
+     .secondaryText{
       margin-bottom: 50px;
+      padding: 0 15px !important;
     }
 
-    & #moreBtn{
+     #moreBtn{
       margin: 0 auto;
     }
     
-  }
+  
 
   .sliderImage{
     border-radius: 5px !important;
     height: 473px;
+    
   }
 
   .slick-list{
-  width: 90vw;
+ 
 }
 }

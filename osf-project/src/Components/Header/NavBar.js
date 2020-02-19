@@ -7,9 +7,10 @@ import Navbar from "react-bootstrap/Navbar";
 import "./Header.scss";
 import './HeaderMedia.scss';
 import logo from "../../Images/logo.png";
-import MenuList from './MenuList'
+import MenuList from './MenuList';
 import LanguageSelect from "./LanguageSelect";
 import BurgerNav from './BurgerNav'
+import {connect} from 'react-redux'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -25,9 +26,18 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ButtonAppBar() {
-  const classes = useStyles();
+const mapStateToProps = state => {
+  return {
+    cartCount: state.Cart.cartCount,
+    wishCount: state.Wish.wishCount
+  };
+};
 
+
+ export function ButtonAppBar(props) {
+  
+  const classes = useStyles();
+  
   return (
     <div className={classes.root}>
       <AppBar position="static" className="NavBar">
@@ -55,14 +65,22 @@ export default function ButtonAppBar() {
             </Nav.Link>
           </Nav>
         </Navbar>
-        <LanguageSelect id='language'/>
+        <LanguageSelect id="language" />
         <div className="icons">
           <i class="fas fa-search"></i>
           <i class="far fa-user"></i>
-          <i class="far fa-heart"></i>
-          <i class="fas fa-shopping-basket"></i>
+          <i class="far fa-heart">
+            <p id="countShow">{props.wishCount}</p>
+          </i>
+          <i class="fas fa-shopping-basket">
+            <p id="countShow">{props.cartCount}</p>
+          </i>
         </div>
       </AppBar>
     </div>
   );
 }
+
+
+
+export default connect(mapStateToProps)(ButtonAppBar);

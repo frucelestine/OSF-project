@@ -40,6 +40,7 @@ body{
     & .fas, .far{
       color: #a2a09e;
       cursor: pointer;
+      position: relative;
       width: 25px;
       height: 25px;
 
@@ -240,6 +241,22 @@ list-style: none;
     }
   }
 }
+
+//Counter Circle styles
+#countShow{
+  position: absolute;
+  font-size: 13px;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border: 1px solid #84bc22;
+  border-radius: 50%;
+  color: #84bc22;
+  top: -6px;
+  right: 0;
+}
+
 
 
 

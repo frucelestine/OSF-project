@@ -3,7 +3,11 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import MenuList from './MenuList'
+import "bootstrap/dist/css/bootstrap.min.css";
 import MenuIcon from "@material-ui/icons/Menu";
+import dropImg from '../../Images/dropImg.jpg'
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Dropdown from 'react-bootstrap/Dropdown'
 
 export default function SimpleMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -23,7 +27,7 @@ export default function SimpleMenu() {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        <MenuIcon/>
+        <MenuIcon />
       </Button>
       <Menu
         id="simple-menu"
@@ -32,12 +36,30 @@ export default function SimpleMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>
-          <MenuList />
-        </MenuItem>
-        <MenuItem onClick={handleClose}>COMPANY</MenuItem>
-        <MenuItem onClick={handleClose}>LIBRARY</MenuItem>
-        <MenuItem onClick={handleClose}>CONTACT US</MenuItem>
+        <DropdownButton id="dropdown-basic-button" title="SERVICES">
+          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        </DropdownButton>
+
+        <DropdownButton id="dropdown-basic-button" title="COMPANY">
+          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        </DropdownButton>
+
+        <DropdownButton id="dropdown-basic-button" title="LIBRARY">
+          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        </DropdownButton>
+        
+        <DropdownButton id="dropdown-basic-button" title="CONTACT US">
+          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+        </DropdownButton>
+        <img src={dropImg} id="burgerImg" alt="woman with shopping bags" />
       </Menu>
     </div>
   );
