@@ -79,6 +79,11 @@ border-width: 0 !important;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
+
+  .NavBar{
+    max-width: 768px;
+  }
+
   #BurgerNav {
     display: block;
   }
@@ -124,5 +129,8 @@ border-width: 0 !important;
 
   .MobileIcons {
     display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 }

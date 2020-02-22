@@ -13,6 +13,7 @@ import ReplayIcon from "@material-ui/icons/Replay";
 import {addWish} from '../../../Redux/Wish/WishAction'
 import { addToCart } from "../../../Redux/Cart/CartAction";
 import { connect } from "react-redux";
+import { Link } from 'react-router-dom';
 import "./PopularItems.scss";
 import dragons from "../../../Images/dragons.png";
 import prod from "../../../Images/prod.jpg";

@@ -78,6 +78,7 @@ const mapStateToProps = state => {
           </i>
         </div>
       </AppBar>
+    
     </div>
   );
 }
