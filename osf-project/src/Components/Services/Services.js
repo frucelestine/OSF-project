@@ -38,6 +38,7 @@ export class Services extends Component {
           / <span> Category Landing Services </span>
         </div>
         <h2 className="servicesHead">Services</h2>
+        <button className="hideSort">Hide Filter</button>
 
         <div className="serviceSorting">
           <div className="sortPrice">
@@ -100,7 +101,8 @@ export class Services extends Component {
             </div>
           </div>
         </div>
-        <MoreServiceItems/>
+
+        <MoreServiceItems />
       </div>
     );
   }

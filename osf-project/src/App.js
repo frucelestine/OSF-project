@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
-import HomePage from './Components/Pages/HomePage';
-import ProductDetailPage from './Components/Pages/ProductDetailPage'
+import HomePage from "./Components/Pages/HomePage";
+
+import ProductDetailPage from "./Components/Pages/ProductDetailPage";
 import Store from "./Redux/Store";
-import NotFoundPage from './Components/Pages/NotFoundPage';
+import NotFoundPage from "./Components/Pages/NotFoundPage";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import ServicesPage from './Components/Pages/ServicesPage'
+import ServicesPage from "./Components/Pages/ServicesPage";
 
 export default function App() {
   return (

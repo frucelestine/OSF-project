@@ -2,7 +2,10 @@ import {ADD_TO_CART} from './CartTypes'
 
 const initialState = {
     cartCount: 0
-}
+};
+
+
+
 
 const cartReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -12,6 +15,7 @@ const cartReducer = (state = initialState, action) => {
         }
         default: return state
     }
+ 
 }
 
 export default cartReducer

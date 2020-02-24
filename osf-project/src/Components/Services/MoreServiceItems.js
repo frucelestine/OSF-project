@@ -25,7 +25,7 @@ import dropImg from "../../Images/dropImg.jpg"
 
 const useStyles = makeStyles(theme => ({
   root: {
-    maxWidth: 270,
+    width: 270,
     height: 367,
     textAlign: "center",
     borderRadius: 7,

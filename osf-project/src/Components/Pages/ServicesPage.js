@@ -5,6 +5,7 @@ import FeaturedProducts from '../../Components/Main/FeaturedProducts/FeaturedPro
 import Footer from '../../Components/Footer/Footer'
 import LoginForm from '../Login/LoginForm'
 import FooterForMobile from '../Footer/FooterForMobile'
+import MobileIcons from '../Header/MobileIcons'
 
 export class ServicesPage extends Component {
     render() {
@@ -16,6 +17,7 @@ export class ServicesPage extends Component {
                 <FeaturedProducts />
                 <Footer />
                 <FooterForMobile />
+                <MobileIcons/>
                 
             </div>
         )

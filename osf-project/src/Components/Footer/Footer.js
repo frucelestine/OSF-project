@@ -19,7 +19,7 @@ function Footer() {
         <p className="address">
           5600, Blvd. des Galeries, Bur 530 Québec, Québec G2K 2H6
         </p>
-        <a href="mailto:someone@yoursite.com" className="email">
+        <a href="mailto:contact@osf-global.com" className="email">
           contact@osf-global.com
         </a>
         <a href="tel:+1 (888) 548-4344" className="contactNumber">
