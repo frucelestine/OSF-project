@@ -61,6 +61,7 @@
     background-color: #ffffff;
 
     & .slick-slider {
+      display: block;
       & .slick-dots {
         & ul {
           & li:nth-child(1) {

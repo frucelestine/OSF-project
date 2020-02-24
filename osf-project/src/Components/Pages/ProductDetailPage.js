@@ -6,7 +6,7 @@ import Footer from "../../Components/Footer/Footer";
 import FooterForMobile from "../../Components/Footer/FooterForMobile";
 import MobileIcons from "../../Components/Header/MobileIcons";
 import ProductDetail from '../../Components/Main/ProductDetail/ProductDetail';
-import FeaturedProducts from "../../Components/Main/FeaturedProducts/FeaturedProducts";
+import ProductPopular from "../../Components/Main/ProductDetail/ProductPopular/ProductPopular";
 
 export default function ProductDetailPage() {
     return (
@@ -14,7 +14,7 @@ export default function ProductDetailPage() {
         <NavBar />
         <LoginForm />
         <ProductDetail />
-        <FeaturedProducts />
+        <ProductPopular />
         <Services />
         <Footer />
         <FooterForMobile />

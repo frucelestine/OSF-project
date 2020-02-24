@@ -6,12 +6,12 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Header.scss";
 import './HeaderMedia.scss';
-import LoginForm from '../../Components/Login/LoginForm'
 import logo from "../../Images/logo.png";
 import MenuList from './MenuList';
 import LanguageSelect from "./LanguageSelect";
-import BurgerNav from './BurgerNav'
-import {connect} from 'react-redux'
+import BurgerNav from './BurgerNav';
+import { connect } from 'react-redux';
+import {Link} from 'react-router-dom'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -46,12 +46,14 @@ const mapStateToProps = state => {
           <BurgerNav />
         </div>
 
-        <div className="logoType">
-          <img src={logo} className="siteLogo" alt="siteLogo" />
-          <h1 className="logoTitle">
-            OSF <span>Academy</span>
-          </h1>
-        </div>
+        <Link to="/" style={{textDecoration: "none"}}>
+          <div className="logoType">
+            <img src={logo} className="siteLogo" alt="siteLogo" />
+            <h1 className="logoTitle">
+              OSF <span>Academy</span>
+            </h1>
+          </div>
+        </Link>
         <Navbar variant="light" className="navMenu">
           <Nav className="mr-auto">
             <MenuList />
@@ -78,7 +80,6 @@ const mapStateToProps = state => {
           </i>
         </div>
       </AppBar>
-    
     </div>
   );
 }

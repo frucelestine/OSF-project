@@ -210,13 +210,20 @@ list-style: none;
     font-family: "Lato", sans-serif;
     color: #ffffff;
     font-size: 16px;
+    text-decoration: none;
     text-transform: capitalize;
 
-    &.heading{
+    & .dropHeading{
       font-weight: 900;
       font-size: 14px;
     }
+
   }
+
+  & .sectLink{
+      color: #fff;
+      text-decoration: none;
+    }
 }
 
 .DropMenu{

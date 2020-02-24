@@ -67,7 +67,7 @@ export default function SimpleTabs() {
           <Tab className="tabHead" label="Description" {...a11yProps(0)} />
           <Tab
             className="tabHead"
-            label="Additional Information"
+            label={"Additional Information"}
             {...a11yProps(1)}
           />
           <Tab className="tabHead" label="Reviews(3)" {...a11yProps(2)} />

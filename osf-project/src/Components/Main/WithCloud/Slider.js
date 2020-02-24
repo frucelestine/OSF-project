@@ -4,6 +4,7 @@ import sliderImg from "../../../Images/sliderImg.jpg";
 import "./WithCloud.scss";
 import { Button } from "@material-ui/core";
 import Discount from "./Discount";
+import {Link} from 'react-router-dom'
 
 function SampleNextArrow(props) {
   const { className, style } = props;
@@ -60,9 +61,11 @@ export default class extends React.Component {
                   Improve business performance and the user experience with the
                   right mix of IoT technology and processes
                 </h6>
-                <Button id="moreBtn" variant="outlined">
-                  VIEW MORE
-                </Button>
+                <Link to="/services" style={{ textDecoration: "none" }}>
+                  <Button id="moreBtn" variant="outlined">
+                    VIEW MORE
+                  </Button>
+                </Link>
               </div>
               <img
                 className="sliderImage"
@@ -80,9 +83,11 @@ export default class extends React.Component {
                   Improve business performance and the user experience with the
                   right mix of IoT technology and processes
                 </h6>
-                <Button id="moreBtn" variant="outlined">
-                  VIEW MORE
-                </Button>
+                <Link to="/services" style={{ textDecoration: "none" }}>
+                  <Button id="moreBtn" variant="outlined">
+                    VIEW MORE
+                  </Button>
+                </Link>
               </div>
               <img
                 className="sliderImage"
@@ -99,9 +104,11 @@ export default class extends React.Component {
                   Improve business performance and the user experience with the
                   right mix of IoT technology and processes
                 </h6>
-                <Button id="moreBtn" variant="outlined">
-                  VIEW MORE
-                </Button>
+                <Link to="/services" style={{ textDecoration: "none" }}>
+                  <Button id="moreBtn" variant="outlined">
+                    VIEW MORE
+                  </Button>
+                </Link>
               </div>
               <img
                 className="sliderImage"
