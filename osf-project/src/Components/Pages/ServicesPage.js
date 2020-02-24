@@ -15,7 +15,7 @@ export class ServicesPage extends Component {
                 <Services />
                 <FeaturedProducts />
                 <Footer />
-                <FooterForMobile/>
+                <FooterForMobile />
                 
             </div>
         )
