@@ -45,6 +45,7 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
+
 export function PopularCard(props) {
   console.debug({ props });
   const classes = useStyles();
