@@ -148,9 +148,7 @@ function DropMenu() {
         <div className="dropRow">
           <ul>
             <li className="dropList">
-              <h4 className="sectLink dropHeading">
-                Sales
-              </h4>
+              <h4 className="sectLink dropHeading">Sales</h4>
             </li>
             <li className="dropList">
               <Link to="/page-not-found" className="sectLink">

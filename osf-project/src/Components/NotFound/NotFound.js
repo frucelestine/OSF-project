@@ -7,7 +7,11 @@ export default function NotFound() {
     return (
       <div className="notFound">
         <div className="notBrowse">
-          <span>Home </span> / <span> 404 </span> 
+          <Link to="/" style={{ textDecoration: "none" }}>
+            {" "}
+            <span>Home </span>
+          </Link>{" "}
+          / <span> 404 </span>
         </div>
         <h2 className="notFoundDigit">404</h2>
         <div className="notFoundMain">
@@ -30,7 +34,7 @@ export default function NotFound() {
               commodo ligula eget dolor. Aenean massa.
             </p>
 
-            <Link to='/' style={{ textDecoration: "none" }}>
+            <Link to="/" style={{ textDecoration: "none" }}>
               <button className="backHome">Go back to Homepage</button>
             </Link>
 

@@ -2,7 +2,6 @@ import React from "react";
 import './WithCloud.scss';
 import { Button } from "@material-ui/core";
 import palmTree from '../../../Images/palmTree.png'
-import FacebookIcon from '@material-ui/icons/Facebook';
 
 function Discount() {
   return (
@@ -13,8 +12,8 @@ function Discount() {
         <img
           className="palmTree"
           src={palmTree}
-          alt="image of a palm tree"
-        ></img>
+          alt="discount palm tree"
+        />
       </div>
       <h5 className="followUS">Follow us on Facebook</h5>
 

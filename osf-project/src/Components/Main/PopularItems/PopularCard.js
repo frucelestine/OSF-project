@@ -47,7 +47,6 @@ const mapDispatchToProps = dispatch => {
 
 
 export function PopularCard(props) {
-  console.debug({ props });
   const classes = useStyles();
 
   return (
@@ -314,7 +313,7 @@ export function PopularCard(props) {
             />
             <div className="disableCardTextBlock">
               <h5 className="disableText">
-                My dragons are misbehaving again. Unbelieveable!
+                My dragons are misbehaving again. Unbelievable!
               </h5>
               <div className="chatIconGroup">
                 <img src={dragons} alt="chat icon" />

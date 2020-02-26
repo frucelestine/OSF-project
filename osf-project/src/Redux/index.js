@@ -1,2 +1,2 @@
-export { addWish } from './Wish/WishAction'
-export { addCart } from "./Wish/WishAction";
+export { addWish } from './Wish/WishAction';
+export { addCart } from './Wish/WishAction';

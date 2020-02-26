@@ -8,6 +8,7 @@ import Services from "../../Components/Main/Services/Services";
 import FooterForMobile from '../../Components/Footer/FooterForMobile';
 import MobileIcons from '../../Components/Header/MobileIcons';
 import LoginForm from '../../Components/Login/LoginForm';
+import PopularMobile from '../../Components/Main/PopularItems/PopularMobile';
 import Footer from "../../Components/Footer/Footer";
 
 
@@ -18,6 +19,7 @@ export default function HomePage() {
         <LoginForm />
         <Slider />
         <PopularCard />
+        <PopularMobile />
         <Banner />
         <FeaturedProducts />
         <Services />

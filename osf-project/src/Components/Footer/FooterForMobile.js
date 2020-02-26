@@ -93,10 +93,34 @@ function FooterForMobile() {
         </Dropdown.Menu>
       </Dropdown>
       <div className="social">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-google-plus-g"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-pinterest-p"></i>
+        <a
+          href="https://www.facebook.com/groups/262391997178767/"
+          target="_blank"
+          rel="nofollow"
+        >
+          <i class="fab fa-facebook-f" />
+        </a>
+        <a
+          href="https://aboutme.google.com/u/0/?referer=gplus"
+          target="_blank"
+          rel="nofollow"
+        >
+          <i class="fab fa-google-plus-g" />
+        </a>
+        <a
+          href="https://twitter.com/intent/tweet?url=[ARTICLELINK]&text=Check%20this%20out:"
+          target="_blank"
+          rel="noOpener"
+        >
+          <i class="fab fa-twitter" />
+        </a>
+        <a
+          href="https://www.pinterest.com/"
+          target="_blank"
+          rel="Pinterest-media"
+        >
+          <i class="fab fa-pinterest-p" />
+        </a>
       </div>
     </div>
   );

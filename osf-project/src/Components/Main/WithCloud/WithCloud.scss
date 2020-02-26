@@ -14,22 +14,21 @@
 }
 
 //Slider Dots
-.slick-dots li button:before{
+.slick-dots li button:before {
   color: #ffffff !important;
   width: 30px;
   height: 30px;
 }
 
-.slick-dots li.slick-active button:before{
+.slick-dots li.slick-active button:before {
   width: 12px;
   height: 12px;
   opacity: 1;
   border: 3px solid #ffffff;
   top: 5px;
-  content: ' ';
+  content: " ";
   background-position: center;
   border-radius: 50%;
-
 }
 
 .sliderImage {
@@ -40,10 +39,9 @@
   border-radius: 5px;
 }
 
-.sliderGroup{
+.sliderGroup {
   position: relative;
   box-sizing: border-box;
-
 }
 
 .sliderText {
@@ -55,27 +53,26 @@
   color: #ffffff;
   max-width: 663px;
 
-  &.textB{
+  &.textB {
     text-align: center;
-   margin-top: 77px;
-   left: 50%;
-   transform: translateX(-50%);
-   padding: 0;
+    margin-top: 77px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
 
-   & .secondaryText{
-         margin: 0 auto 30px;
-   }
+    & .secondaryText {
+      margin: 0 auto 30px;
+    }
   }
 
-  &.textC{
+  &.textC {
     text-align: right;
     right: 60px;
 
-    & .secondaryText{
-         margin: 0 0 30px auto;
-   }
+    & .secondaryText {
+      margin: 0 0 30px auto;
+    }
   }
-
 
   & .mainText {
     font-weight: 900;
@@ -103,12 +100,13 @@
 .discountContainer {
   text-align: center;
   max-width: 270px;
-  // position: absolute;
-  // right: 55px;
 
   & .discountPaper {
     background-color: rgba(132, 188, 34, 0.3);
     height: 335px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-blend-mode: lighten;
     color: #ffffff;
     position: relative;
     border-radius: 5px;
@@ -126,7 +124,7 @@
       font-size: 24px;
       font-weight: 400;
       max-width: 114px;
-      z-index: 99;
+      z-index: 999;
       margin: 0 auto;
     }
 
@@ -160,7 +158,7 @@
     color: #3a5b96;
     width: 150px;
 
-    &:hover{
+    &:hover {
       background-color: #3a5b96;
       color: #ffffff;
     }
@@ -178,7 +176,7 @@
     width: 100%;
   }
 
-  .sliderImage{
+  .sliderImage {
     height: 400px;
   }
 
@@ -186,15 +184,10 @@
     max-width: 485px;
   }
 
-   
-
-      .sliderText .mainText {
-        font-size: 32px ;
-        margin-bottom: 40px;
-      }
-
-    
-  
+  .sliderText .mainText {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
 
   .discountPaper {
     height: 250px !important;
@@ -218,53 +211,42 @@
   .followUS {
     padding: 15px 0 10px !important;
   }
-
 }
 
-@media screen and (min-width:320px) and (max-width:767px){
-
-  .withCloudContainer{
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .withCloudContainer {
     padding: 15px;
     box-sizing: border-box;
     display: block;
   }
-  .discountContainer{
+  .discountContainer {
     display: none;
   }
 
-  .textC{
+  .textC {
     right: 10px !important;
   }
 
-  .sliderText{
+  .sliderText {
     padding: 20px;
   }
 
-    .mainText{
-      font-size: 28px !important;
-    }
-
-     .secondaryText{
-      margin-bottom: 50px;
-      padding: 0 15px !important;
-    }
-
-     #moreBtn{
-      margin: 0 auto;
-      text-decoration: none !important;
-    }
-    
-  
-
-  .sliderImage{
-    border-radius: 5px !important;
-    height: 473px;
-    
+  .mainText {
+    font-size: 28px !important;
   }
 
-  .slick-list{
- 
-}
-}
+  .secondaryText {
+    margin-bottom: 50px;
+    padding: 0 15px !important;
+  }
 
+  #moreBtn {
+    margin: 0 auto;
+    text-decoration: none !important;
+  }
 
+  .sliderImage {
+    border-radius: 5px !important;
+    height: 473px;
+  }
+}

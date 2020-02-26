@@ -5,9 +5,17 @@ import MenuItem from "@material-ui/core/MenuItem";
 import MenuList from './MenuList'
 import "bootstrap/dist/css/bootstrap.min.css";
 import MenuIcon from "@material-ui/icons/Menu";
+import {Link} from 'react-router-dom'
 import dropImg from '../../Images/dropImg.jpg'
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import Dropdown from 'react-bootstrap/Dropdown'
+import { makeStyles } from "@material-ui/core/styles";
+import ExpansionPanel from "@material-ui/core/ExpansionPanel";
+import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
+import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import Typography from "@material-ui/core/Typography";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+
 
 export default function SimpleMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -36,29 +44,302 @@ export default function SimpleMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <DropdownButton id="dropdown-basic-button" title="SERVICES">
-          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-        </DropdownButton>
+        <ExpansionPanel>
+          <ExpansionPanelSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+            className="main-menu"
+          >
+            <h4 className="dropdown-basic-button">SERVICES</h4>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails className="menu-exp">
+            <ExpansionPanel>
+              <ExpansionPanelSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+                className="sub-menu"
+              >
+                <h5 className="sub-menu-title">Product Category</h5>
+              </ExpansionPanelSummary>
+              <ExpansionPanelDetails className="sub-menu-exp">
+                <Link to="/page-not-found" className="menu-link">
+                  Gadgets
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Garden
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Grocery
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Jewelry
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Mobile
+                </Link>
+              </ExpansionPanelDetails>
+            </ExpansionPanel>
 
-        <DropdownButton id="dropdown-basic-button" title="COMPANY">
-          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-        </DropdownButton>
+            <ExpansionPanel>
+              <ExpansionPanelSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+                className="sub-menu"
+              >
+                <h5 className="sub-menu-title">Sales</h5>
+              </ExpansionPanelSummary>
+              <ExpansionPanelDetails className="sub-menu-exp">
+                <Link to="/page-not-found" className="menu-link">
+                  Accessories
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Alcohol
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Arts
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Books
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Drinks
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Electronics
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Flowers & Plants
+                </Link>
+              </ExpansionPanelDetails>
+            </ExpansionPanel>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
 
-        <DropdownButton id="dropdown-basic-button" title="LIBRARY">
-          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-        </DropdownButton>
-        
-        <DropdownButton id="dropdown-basic-button" title="CONTACT US">
-          <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-          <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-          <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-        </DropdownButton>
+        <ExpansionPanel>
+          <ExpansionPanelSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+            className="main-menu"
+          >
+            <h4 className="dropdown-basic-button">COMPANY</h4>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails className="menu-exp">
+            <ExpansionPanel>
+              <ExpansionPanelSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+                className="sub-menu"
+              >
+                <h5 className="sub-menu-title">Product Category</h5>
+              </ExpansionPanelSummary>
+              <ExpansionPanelDetails className="sub-menu-exp">
+                <Link to="/page-not-found" className="menu-link">
+                  Gadgets
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Garden
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Grocery
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Jewelry
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Mobile
+                </Link>
+              </ExpansionPanelDetails>
+            </ExpansionPanel>
+
+            <ExpansionPanel>
+              <ExpansionPanelSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+                className="sub-menu"
+              >
+                <h5 className="sub-menu-title">Sales</h5>
+              </ExpansionPanelSummary>
+              <ExpansionPanelDetails className="sub-menu-exp">
+                <Link to="/page-not-found" className="menu-link">
+                  Accessories
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Alcohol
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Arts
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Books
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Drinks
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Electronics
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Flowers & Plants
+                </Link>
+              </ExpansionPanelDetails>
+            </ExpansionPanel>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+
+        <ExpansionPanel>
+          <ExpansionPanelSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+            className="main-menu"
+          >
+            <h4 className="dropdown-basic-button">LIBRARY</h4>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails className="menu-exp">
+            <ExpansionPanel>
+              <ExpansionPanelSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+                className="sub-menu"
+              >
+                <h5 className="sub-menu-title">Product Category</h5>
+              </ExpansionPanelSummary>
+              <ExpansionPanelDetails className="sub-menu-exp">
+                <Link to="/page-not-found" className="menu-link">
+                  Gadgets
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Garden
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Grocery
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Jewelry
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Mobile
+                </Link>
+              </ExpansionPanelDetails>
+            </ExpansionPanel>
+
+            <ExpansionPanel>
+              <ExpansionPanelSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+                className="sub-menu"
+              >
+                <h5 className="sub-menu-title">Sales</h5>
+              </ExpansionPanelSummary>
+              <ExpansionPanelDetails className="sub-menu-exp">
+                <Link to="/page-not-found" className="menu-link">
+                  Accessories
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Alcohol
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Arts
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Books
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Drinks
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Electronics
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Flowers & Plants
+                </Link>
+              </ExpansionPanelDetails>
+            </ExpansionPanel>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+
+        <ExpansionPanel>
+          <ExpansionPanelSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+            className="main-menu"
+          >
+            <h4 className="dropdown-basic-button">CONTACT US</h4>
+          </ExpansionPanelSummary>
+          <ExpansionPanelDetails className="menu-exp">
+            <ExpansionPanel>
+              <ExpansionPanelSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+                className="sub-menu"
+              >
+                <h5 className="sub-menu-title">Product Category</h5>
+              </ExpansionPanelSummary>
+              <ExpansionPanelDetails className="sub-menu-exp">
+                <Link to="/page-not-found" className="menu-link">
+                  Gadgets
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Garden
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Grocery
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Jewelry
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Mobile
+                </Link>
+              </ExpansionPanelDetails>
+            </ExpansionPanel>
+
+            <ExpansionPanel>
+              <ExpansionPanelSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel1a-content"
+                id="panel1a-header"
+                className="sub-menu"
+              >
+                <h5 className="sub-menu-title">Sales</h5>
+              </ExpansionPanelSummary>
+              <ExpansionPanelDetails className="sub-menu-exp">
+                <Link to="/page-not-found" className="menu-link">
+                  Accessories
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Alcohol
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Arts
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Books
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Drinks
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Electronics
+                </Link>
+                <Link to="/page-not-found" className="menu-link">
+                  Flowers & Plants
+                </Link>
+              </ExpansionPanelDetails>
+            </ExpansionPanel>
+          </ExpansionPanelDetails>
+        </ExpansionPanel>
+
         <img src={dropImg} id="burgerImg" alt="woman with shopping bags" />
       </Menu>
     </div>
