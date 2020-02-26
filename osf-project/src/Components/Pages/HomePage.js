@@ -10,6 +10,7 @@ import MobileIcons from '../../Components/Header/MobileIcons';
 import LoginForm from '../../Components/Login/LoginForm';
 import Footer from "../../Components/Footer/Footer";
 
+
 export default function HomePage() {
     return (
       <div>

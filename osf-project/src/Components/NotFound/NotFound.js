@@ -7,7 +7,7 @@ export default function NotFound() {
     return (
       <div className="notFound">
         <div className="notBrowse">
-          <span>Home </span> / <span> 404 </span>
+          <span>Home </span> / <span> 404 </span> 
         </div>
         <h2 className="notFoundDigit">404</h2>
         <div className="notFoundMain">
