@@ -25,7 +25,7 @@ function Services() {
           <p className="itemTextDescribtion">
             A standardized methodology designed to deliver measurable business
             results and predictable costs
-          </p>
+          </p> 
         </div>
       </div>
 

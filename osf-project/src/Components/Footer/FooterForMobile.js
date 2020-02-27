@@ -96,28 +96,28 @@ function FooterForMobile() {
         <a
           href="https://www.facebook.com/groups/262391997178767/"
           target="_blank"
-          rel="nofollow"
+          rel="noOpener noReferrer"
         >
           <i class="fab fa-facebook-f" />
         </a>
         <a
           href="https://aboutme.google.com/u/0/?referer=gplus"
           target="_blank"
-          rel="nofollow"
+          rel="noOpener noReferrer"
         >
           <i class="fab fa-google-plus-g" />
         </a>
         <a
           href="https://twitter.com/intent/tweet?url=[ARTICLELINK]&text=Check%20this%20out:"
           target="_blank"
-          rel="noOpener"
+          rel="noOpener noReferrer"
         >
           <i class="fab fa-twitter" />
         </a>
         <a
           href="https://www.pinterest.com/"
           target="_blank"
-          rel="Pinterest-media"
+          rel="noOpener noReferrer"
         >
           <i class="fab fa-pinterest-p" />
         </a>

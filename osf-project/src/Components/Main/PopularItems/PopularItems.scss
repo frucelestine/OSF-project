@@ -112,6 +112,10 @@
     top: 50%;
     transform: translateY(-50%);
 
+    &:focus{
+      outline: unset !important;
+    }
+
     & #overlayIcon {
       height: 30px;
       width: 30px;
@@ -142,6 +146,10 @@
     background-color: #24c36c;
     border: 2px solid #45413e;
     color: #262a32;
+  }
+
+  &:focus{
+    outline: unset;
   }
 }
 

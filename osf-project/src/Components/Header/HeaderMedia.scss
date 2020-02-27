@@ -26,6 +26,10 @@
 
 .dropdown {
   height: 40px;
+
+  &:focus{
+    outline: unset;
+  }
 }
 
 #simple-menu {

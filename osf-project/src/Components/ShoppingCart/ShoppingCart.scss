@@ -1,0 +1,126 @@
+.shoppingCart {
+  font-family: "Lato", sans-serif;
+  background-color: #f1edea;
+  margin-top: 80px;
+  text-align: center;
+  padding: 52px 50px;
+  position: relative;
+
+  & .shoppingBrowse {
+    font-size: 13px;
+    text-align: center;
+    color: #45413e;
+    margin-bottom: 20px;
+
+    & span {
+      color: #84bc22;
+    }
+
+    & span:nth-child(2) {
+      color: #45413e;
+    }
+  }
+
+  & .shoppingHead {
+    text-align: center;
+    font-size: 48px;
+    color: #45413e;
+    margin-bottom: 50px;
+    font-weight: 900;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      background-color: #fff;
+      height: 2px;
+      width: 360px;
+      top: 32px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      background-color: #fff;
+      height: 2px;
+      width: 360px;
+      top: 32px;
+      right: 0;
+    }
+  }
+
+  & .shoppingBody{
+    background-color: #fff;
+    border-radius: 5px 5px 0 0;
+
+    & .shoppingItem{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 95px;
+
+      & .itemInfo{
+        display: flex;
+        justify-content: space-between;
+        max-width: 430px;
+
+        & .itemImg{
+          height: 9opx;
+          width: 100px;
+          background-color: #c7c7c7;
+        }
+
+        & .itemText{
+          text-align: left;
+          padding-left: 20px;
+
+          & .textDescription{
+            font-size: 16px;
+          }
+
+          & .textPrice{
+            color: #bdc3c7;
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+      }
+
+      & .itemPricing{
+        display: flex;
+        justify-content: space-between;
+        width: 375px;
+
+        & .quantity{
+          display: inline-block;
+          width: 114px;
+        }
+
+        & .pricePerItem{
+          color: #45413e;
+          font-size: 30px;
+          font-weight: 900;
+
+        }
+
+        & .deleteBtn{
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          border: 2px solid #e8e2d6;
+          background-color: transparent;
+          color: #a2a09e;
+          text-align: center;
+          line-height: 5px;
+
+          &:focus{
+            outline: unset;
+          }
+        }
+      }
+    }
+  }
+}

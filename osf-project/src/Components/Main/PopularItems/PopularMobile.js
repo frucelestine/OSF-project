@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./PopularItems.scss";
 import Slider from "react-slick";
 import { makeStyles } from "@material-ui/core/styles";

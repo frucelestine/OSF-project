@@ -6,6 +6,7 @@ import Footer from '../../Components/Footer/Footer'
 import LoginForm from '../Login/LoginForm'
 import FooterForMobile from '../Footer/FooterForMobile'
 import MobileIcons from '../Header/MobileIcons'
+import ShoppingCart from '../../Components/ShoppingCart/ShoppingCart'
 
 export class ServicesPage extends Component {
     render() {
@@ -13,6 +14,7 @@ export class ServicesPage extends Component {
             <div>
                 <NavBar />
                 <LoginForm />
+                <ShoppingCart/>
                 <Services />
                 <FeaturedProducts />
                 <Footer />

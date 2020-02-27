@@ -9,11 +9,6 @@ function Discount() {
       <div className="discountPaper">
         <h3 className="discountPercent">55%</h3>
         <h4 className="percentDescribe">SUMMER SALES</h4>
-        <img
-          className="palmTree"
-          src={palmTree}
-          alt="discount palm tree"
-        />
       </div>
       <h5 className="followUS">Follow us on Facebook</h5>
 

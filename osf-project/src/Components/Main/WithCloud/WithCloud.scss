@@ -92,6 +92,10 @@
     border-color: #ffffff;
     color: #ffffff;
     width: 150px;
+
+    &:focus{
+      outline: unset;
+    }
   }
 }
 
@@ -102,16 +106,14 @@
   max-width: 270px;
 
   & .discountPaper {
-    background-color: rgba(132, 188, 34, 0.3);
     height: 335px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-blend-mode: lighten;
     color: #ffffff;
     position: relative;
-    border-radius: 5px;
     text-align: center;
     width: 270px;
+    background:url("../../../Images/palmTree.png") no-repeat;
+    border-radius: 5px;
+    
 
     & .discountPercent {
       font-size: 100px;
@@ -161,6 +163,10 @@
     &:hover {
       background-color: #3a5b96;
       color: #ffffff;
+    }
+
+    &:focus{
+      outline: unset;
     }
   }
 }
