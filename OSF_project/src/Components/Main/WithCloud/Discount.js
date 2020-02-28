@@ -1,7 +1,7 @@
 import React from "react";
 import './WithCloud.scss';
 import { Button } from "@material-ui/core";
-import palmTree from '../../../Images/palmTree.png'
+
 
 function Discount() {
   return (

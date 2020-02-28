@@ -103,7 +103,7 @@ function ProductDetail(props) {
   };
 
   const classes = useStyles();
-  const [age, setAge] = React.useState("");
+  const [ setAge] = React.useState("");
   const handleChange = event => {
     setAge(event.target.value);
   };

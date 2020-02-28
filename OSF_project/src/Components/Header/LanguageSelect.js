@@ -22,8 +22,8 @@ export default function NativeSelects() {
     name: "hai"
   });
 
-  const inputLabel = React.useRef(null);
-  const [labelWidth, setLabelWidth] = React.useState(0);
+  
+  const [labelWidth] = React.useState(0);
   
 
   const handleChange = name => event => {

@@ -56,7 +56,7 @@ class FeaturedProducts extends React.Component {
           </div>
 
           <div id="featureCard">
-            <img id="slideImage" src={img2} alt="image of Gracious home" />
+            <img id="slideImage" src={img2} alt="Gracious home" />
             <div className="cardText">
               <p className="cardDescribtion">
                 Kristina Dam Oak Table With White Marble
@@ -69,7 +69,7 @@ class FeaturedProducts extends React.Component {
             <img
               id="slideImage"
               src={img3}
-              alt="image of man using touch stick on smart screen"
+              alt="man using touch stick on smart screen"
             />
             <div className="cardText">
               <p className="cardDescribtion">
@@ -80,7 +80,7 @@ class FeaturedProducts extends React.Component {
           </div>
 
           <div id="featureCard">
-            <img id="slideImage" src={img4} alt="image of sales force 1" />
+            <img id="slideImage" src={img4} alt="sales force 1" />
             <div className="cardText">
               <p className="cardDescribtion">Hezy Theme</p>
               <p className="cardTitle">Awesome</p>
@@ -108,7 +108,7 @@ class FeaturedProducts extends React.Component {
           </div>
 
           <div id="featureCard">
-            <img id="slideImage" src={img3} alt="image of Gracious home" />
+            <img id="slideImage" src={img3} alt="Gracious home" />
             <div className="cardText">
               <p className="cardDescribtion">
                 Kristina Dam Oak Table With White Marble
@@ -118,7 +118,7 @@ class FeaturedProducts extends React.Component {
           </div>
 
           <div id="featureCard">
-            <img id="slideImage" src={img4} alt="image of sales force 1" />
+            <img id="slideImage" src={img4} alt="sales force 1" />
             <div className="cardText">
               <p className="cardDescribtion">Hezy Theme</p>
               <p className="cardTitle">Awesome</p>
