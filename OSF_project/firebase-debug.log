@@ -1,0 +1,43 @@
+[debug] [2020-02-28T04:54:51.475Z] ----------------------------------------------------------------------
+[debug] [2020-02-28T04:54:51.479Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-02-28T04:54:51.479Z] CLI Version:   7.14.0
+[debug] [2020-02-28T04:54:51.479Z] Platform:      win32
+[debug] [2020-02-28T04:54:51.479Z] Node Version:  v11.12.0
+[debug] [2020-02-28T04:54:51.481Z] Time:          Thu Feb 27 2020 16:54:51 GMT-1200 (GMT-12:00)
+[debug] [2020-02-28T04:54:51.481Z] ----------------------------------------------------------------------
+[debug] [2020-02-28T04:54:51.481Z] 
+[debug] [2020-02-28T04:54:51.493Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-28T04:54:51.493Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\react-projects\OSF-Project\OSF-project\osf-project
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using osf-global-efb4e.
+[debug] [2020-02-28T04:55:00.289Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/osf-global-efb4e  
+ 
+[debug] [2020-02-28T04:55:00.720Z] <<< HTTP RESPONSE 200
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
