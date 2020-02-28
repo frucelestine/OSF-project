@@ -1,9 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
 import sale0 from "../../../Images/sale0.jpg";
 import sale03 from "../../../Images/sale03.jpg";
 import sale07 from "../../../Images/sale07.jpg";
-import ShowMoreText from "react-show-more-text";
 import ProductTabs from './ProductTabs/ProductTabs';
 import sale05 from "../../../Images/sale05.jpg";
 import ShowText from "./ShowText";
@@ -12,14 +11,12 @@ import { addToCart } from "../../../Redux/Cart/CartAction";
 import { connect } from "react-redux";
 import "./ProductDetail.scss";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
-import InputLabel from "@material-ui/core/InputLabel";
-import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
 import FormControl from "@material-ui/core/FormControl";
-import Select from "@material-ui/core/Select";
 import NativeSelect from "@material-ui/core/NativeSelect";
 import InputBase from "@material-ui/core/InputBase";
 import QuantityPicker from "./QuantityPicker";
+import {Link} from "react-router-dom"
 
 const BootstrapInput = withStyles(theme => ({
   root: {
@@ -81,7 +78,7 @@ const mapDispatchToProps = dispatch => {
     slidesToScroll: 1,
     appendDots: dots => (
       <div
-        style={{
+        style={{ 
           borderRadius: "10px",
           bottom: "40px",
           right: "-100px",
@@ -116,8 +113,10 @@ const mapDispatchToProps = dispatch => {
   return (
     <div className="productDetail">
       <div className="browse">
-        <span>Home </span> / <span> OSF Theme </span> /
-        <span> Ruffle Front V-Neck Cardigan</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span>Home </span>
+        </Link>{" "}
+        / <span> OSF Theme </span> /<span> Ruffle Front V-Neck Cardigan</span>
       </div>
       <h2 className="productHead">Ruffle Front V-Neck Cardigan</h2>
       <div className="actionSection">
@@ -172,14 +171,38 @@ const mapDispatchToProps = dispatch => {
           <ShowText />
           <div className="social">
             <p className="share">Share</p>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-google-plus-g"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-pinterest-p"></i>
+            <a
+              href="https://www.facebook.com/groups/262391997178767/"
+              target="_blank"
+              rel="nofollow"
+            >
+              <i class="fab fa-facebook-f" />
+            </a>
+            <a
+              href="https://aboutme.google.com/u/0/?referer=gplus"
+              target="_blank"
+              rel="nofollow"
+            >
+              <i class="fab fa-google-plus-g" />
+            </a>
+            <a
+              href="https://twitter.com/intent/tweet?url=[ARTICLELINK]&text=Check%20this%20out:"
+              target="_blank"
+              rel="noOpener"
+            >
+              <i class="fab fa-twitter" />
+            </a>
+            <a
+              href="https://www.pinterest.com/"
+              target="_blank"
+              rel="Pinterest-media"
+            >
+              <i class="fab fa-pinterest-p" />
+            </a>
           </div>
         </div>
       </div>
-      <ProductTabs/>
+      <ProductTabs />
     </div>
   );
 }
