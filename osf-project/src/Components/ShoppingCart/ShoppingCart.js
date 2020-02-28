@@ -4,12 +4,7 @@ import { Link } from "react-router-dom"
 import { connect } from "react-redux";
 
 
-const mapStateToProps = state => {
-  return {
-    shopCount: state.Shop.shoppingCount,
-    wishCount: state.Wish.wishCount
-  };
-};
+
 
 
 export class ShoppingCart extends Component {
@@ -209,4 +204,4 @@ export class ShoppingCart extends Component {
          }
        }
 
-export default connect(mapStateToProps)(ShoppingCart);
+export default ShoppingCart;

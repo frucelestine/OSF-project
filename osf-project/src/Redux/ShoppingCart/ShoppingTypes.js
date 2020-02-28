@@ -1,2 +1,0 @@
-export const ADD_SHOPPING = "ADD_SHOPPING";
-export const REMOVE_SHOPPING = "REMOVE_SHOPPING";
