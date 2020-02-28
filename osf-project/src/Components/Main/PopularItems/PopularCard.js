@@ -22,7 +22,7 @@ import prod3 from "../../../Images/prod3.jpg";
 import prod4 from "../../../Images/prod4.jpg";
 import prod5 from "../../../Images/prod5.jpg";
 import prod6 from "../../../Images/prod6.jpg";
-import prod7 from "../../../Images/prod7.jpg";
+import prod7 from "../../../Images/prod7.jpg"; 
 import prod8 from "../../../Images/prod8.jpg";
 
 const useStyles = makeStyles(theme => ({

@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
 
 const mapStateToProps = state => {
   return {
-    cartCount: state.Cart.cartCount,
+    cartCount: state.Cart.cartCount, 
     wishCount: state.Wish.wishCount
   };
 };
@@ -46,7 +46,7 @@ const mapStateToProps = state => {
           <BurgerNav />
         </div>
 
-        <Link to="/" style={{textDecoration: "none"}}>
+        <Link to="/" style={{ textDecoration: "none" }}>
           <div className="logoType">
             <img src={logo} className="siteLogo" alt="siteLogo" />
             <h1 className="logoTitle">
@@ -75,9 +75,11 @@ const mapStateToProps = state => {
           <i class="far fa-heart">
             <p id="countShow">{props.wishCount}</p>
           </i>
-          <i class="fas fa-shopping-basket">
-            <p id="countShow">{props.cartCount}</p>
-          </i>
+          <Link to="/shopping-cart">
+            <i class="fas fa-shopping-basket">
+              <p id="countShow">{props.cartCount}</p>
+            </i>
+          </Link>
         </div>
       </AppBar>
     </div>
